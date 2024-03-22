@@ -1,0 +1,10 @@
+name: Different Compare
+on: [push]
+jobs:
+  different_compare:
+    name: Different Compare
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run a script
+      run: diff file.txt different.txt
