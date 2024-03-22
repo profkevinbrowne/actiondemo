@@ -1,2 +1,3 @@
 Some content in the file
 Some more content
+More content
