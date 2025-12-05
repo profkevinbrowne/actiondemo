@@ -10,7 +10,11 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: "3.10"
-      - name: Produce actual1.txt output
+      - name: Produce Test 1 Output
         run: python main.py > actual1.txt
-      - name: Compare expected output to actual
+      - name: Test 1
         run: diff expected1.txt actual1.txt
+      - name: Produce Test 2 Output
+        run: python main.py > actual2.txt
+      - name: Test 2
+        run: diff expected2.txt actual2.txt
