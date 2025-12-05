@@ -1,0 +1,10 @@
+name: Self Compare
+on: [push]
+jobs:
+  self_compare:
+    name: Self Compare
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 
+      - name: Run a script
+        run: diff file.txt file.txt
