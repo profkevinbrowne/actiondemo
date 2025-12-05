@@ -9,6 +9,6 @@ class MaximumFinder:
   def find_max(self, output_filename):
     numbers = [float(line) for line in self.lines]
     output_file = open(output_filename, "w")
-    output_file.write(str(max(numbers)))
+    output_file.write(str(min(numbers)))
     output_file.close()
 
